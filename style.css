@@ -635,15 +635,12 @@ b { font-weight: 700; }
 
 /* ---------- 시즌 ---------- */
 .seasons {
+  position: relative;
   background:
-    radial-gradient(2px 2px at 8% 30%, #fff, transparent),
-    radial-gradient(1.5px 1.5px at 22% 70%, #fff, transparent),
-    radial-gradient(2px 2px at 40% 18%, #fff, transparent),
-    radial-gradient(1.5px 1.5px at 63% 62%, #fff, transparent),
-    radial-gradient(2px 2px at 80% 25%, #fff, transparent),
-    radial-gradient(1.5px 1.5px at 93% 75%, #fff, transparent),
-    linear-gradient(180deg, #1d1733, #3a2a5c);
-  padding: 96px 0 104px;
+    linear-gradient(180deg, rgba(23, 18, 48, 0.82) 0%, rgba(23, 18, 48, 0.55) 45%, rgba(23, 18, 48, 0.1) 80%),
+    url('assets/art/stars-night.webp') 70% 100% / cover no-repeat,
+    #1d1733;
+  padding: 96px 0 220px;
   color: #fff;
 }
 
@@ -695,13 +692,15 @@ b { font-weight: 700; }
   margin-top: 64px;
   padding: 36px 24px;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(23, 18, 48, 0.55);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.16);
   text-align: center;
 }
 
+.get { max-width: 560px; text-align: left; }
 .get h3 { font-family: var(--display); font-weight: 400; font-size: 28px; margin: 0 0 18px; }
-.get .badges { justify-content: center; }
 .get .badge-note { color: #d9cfe9; background: none; }
 
 /* ---------- 바닥 ---------- */
@@ -809,6 +808,9 @@ b { font-weight: 700; }
   .phones figure { flex-basis: 190px; }
   .features { grid-template-columns: 1fr; }
   .seals { grid-template-columns: repeat(2, 1fr); }
+  .seasons { background-position: 0 0, 92% 100%, 0 0; background-size: auto, auto 520px, auto; padding-bottom: 300px; }
+  .get { text-align: center; }
+  .get .badges { justify-content: center; }
   .site-footer p { margin: 0; }
   .card { padding: 24px 20px; }
   .page-hero img { width: 100px; right: 4%; }
