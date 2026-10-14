@@ -229,8 +229,8 @@ b { font-weight: 700; }
 .stores .ico {
   width: 18px;
   height: 18px;
-  border-radius: 5px;
-  background: linear-gradient(135deg, #8fd3f7, #4f8ff7);
+  fill: #fff;
+  flex: none;
 }
 
 .stores .ico.play { background: conic-gradient(from 210deg, #34c46e, #f6cf3b, #ef5b4c, #4f8ff7, #34c46e); clip-path: polygon(10% 0, 100% 50%, 10% 100%); border-radius: 0; }
