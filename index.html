@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>하하하 바이블 탐험 – 하양이와 함께 떠나는 성경 여행</title>
 <meta name="description" content="어린 양 하양이와 함께 천지창조부터 요셉까지, 창세기 26개 이야기 속을 직접 걷고 돕고 고르며 하나님의 이야기를 경험하는 어린이 성경 게임">
+<meta name="theme-color" content="#2b1d14">
 <meta property="og:title" content="하하하 바이블 탐험">
 <meta property="og:description" content="하양이와 함께 떠나는 성경 여행 · 창세기 26개 이야기">
 <meta property="og:image" content="assets/og.jpg">
@@ -15,116 +16,168 @@
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-<div class="wrap">
-<header class="top">
-  <a class="brand" href="index.html"><img src="assets/icon.png" alt="">하하하 바이블 탐험</a>
-  <nav><a href="support.html">지원</a><a href="privacy.html">개인정보</a><a href="terms.html">이용약관</a></nav>
+<body class="home">
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">하하하 바이블 탐험</a>
+    <nav class="menu">
+      <a href="#stories">이야기</a>
+      <a href="#play">놀이</a>
+      <a href="#parents">부모님께</a>
+      <a href="support.html">지원</a>
+    </nav>
+    <a class="pill-btn small" href="#seasons">곧 출시</a>
+  </div>
 </header>
 
 <section class="hero">
-  <img class="icon" src="assets/icon.png" alt="하하하 바이블 탐험 아이콘">
-  <h1><span class="r">하</span><span class="o">하</span><span class="b">하</span><br>바이블 <span class="y">탐험</span></h1>
-  <div class="ribbon">하양이와 함께 떠나는 성경 여행</div><br>
-  <span class="badge">App Store · Google Play 출시 준비 중 · 시즌 1 무료</span>
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">어린이 성경 어드벤처 · 시즌 1 창세기</p>
+      <h1 class="logo-type"><span class="r">하</span><span class="o">하</span><span class="b">하</span><br>바이블 <span class="y">탐험</span></h1>
+      <p class="lead">어린 양 <b>하양이</b>와 함께 성경 속을 직접 걷고, 돕고, 고르며 하나님의 이야기를 경험해요. 천지창조부터 요셉까지, 창세기 전체를 26개 이야기로 여행해요.</p>
+      <div class="cta">
+        <a class="pill-btn" href="#stories">26개 이야기 보기</a>
+        <a class="ghost-btn" href="#parents">부모님과 선생님께</a>
+      </div>
+      <ul class="stores">
+        <li><span class="ico"></span>App Store 출시 준비 중</li>
+        <li><span class="ico play"></span>Google Play 출시 준비 중</li>
+      </ul>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <img class="fan f1" src="assets/art/noah.webp" alt="">
+      <img class="fan f2" src="assets/art/dreams.webp" alt="">
+      <div class="window"><img src="assets/art/title-day.webp" alt=""></div>
+      <img class="sticker" src="assets/sheep/1.webp" alt="">
+    </div>
+  </div>
+  <ul class="stats">
+    <li><b>26</b>개 이야기</li>
+    <li><b>27</b>가지 액션 게임</li>
+    <li><b>26</b>장 말씀 카드</li>
+    <li><b>0</b>개 광고</li>
+  </ul>
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 240 90 480 0 720 30 S 1200 80 1440 30 L1440 80 L0 80 Z"/></svg>
 </section>
 
-<div class="card">
-  <h2>성경 속을 직접 걸어요</h2>
-  <p>「하하하 바이블 탐험」은 어린이가 성경 이야기를 읽기만 하는 것이 아니라, 어린 양 <b>하양이</b>와 함께 이야기 속을 직접 걷고, 돕고, 고르며 경험하도록 만든 게임이에요. 시즌 1에서는 천지창조부터 요셉까지 <b>창세기 전체를 26개 이야기</b>로 여행해요.</p>
-  <div class="shots">
-    <img src="assets/1-title.jpg" alt="첫 화면: 언덕 위에서 두루마리를 안은 하양이">
-    <img src="assets/2-map.jpg" alt="바이블 맵: 두루마리 지도와 이야기 메달">
-    <img src="assets/3-word.jpg" alt="노아에게 주신 하나님의 말씀과 성경 위치">
-    <img src="assets/4-ark.jpg" alt="노아와 함께 방주 짓기">
-    <img src="assets/5-stars.jpg" alt="아브라함과 밤하늘 별자리 잇기">
-    <img src="assets/6-sodom.jpg" alt="천사의 손을 잡고 소돔을 떠나는 롯의 가족 컷신">
-    <img src="assets/7-laban.jpg" alt="우물 돌을 굴리는 야곱과 라헬 컷신">
-    <img src="assets/8-joseph.jpg" alt="요셉 이야기에서 하양이와 형의 대화">
-    <img src="assets/9-quiz.jpg" alt="이야기 끝 성경 퀴즈">
+<section class="spotlight" id="spotlight" aria-roledescription="carousel" aria-label="이야기 둘러보기">
+  <div class="sp-in">
+    <div class="sp-art">
+      <img id="sp-img" src="assets/art/creation.webp" alt="">
+      <span class="sp-part" id="sp-part">1부 · 태초</span>
+    </div>
+    <div class="sp-copy" aria-live="polite">
+      <p class="sp-count"><span id="sp-no">01</span> / 26 이야기</p>
+      <h2 id="sp-title">천지창조</h2>
+      <div class="sp-bars" id="sp-bars"></div>
+      <p class="sp-ref" id="sp-ref">창세기 1:1–2:3</p>
+      <p class="sp-sum" id="sp-sum"></p>
+      <p class="sp-game" id="sp-game"></p>
+      <div class="sp-nav">
+        <button type="button" class="round" id="sp-prev" aria-label="이전 이야기">‹</button>
+        <button type="button" class="round" id="sp-next" aria-label="다음 이야기">›</button>
+      </div>
+    </div>
   </div>
+</section>
+
+<section class="section paper" id="stories">
+  <div class="wrap">
+    <h2 class="sec-title">창세기 26개 이야기</h2>
+    <p class="sec-lead">창세기의 흐름을 따라 네 부분으로 나눴어요. 이야기는 성경 순서대로 하나씩 열리고, 끝까지 보면 말씀 카드와 성경 퀴즈가 기다려요.</p>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <ul class="story-grid" id="grid"></ul>
+  </div>
+</section>
+
+<section class="banner" id="play">
+  <img class="banner-bg" src="assets/art/rainbow.webp" alt="무지개 아래 방주와 노아의 가족, 동물들">
+  <div class="banner-card">
+    <h2>모든 이야기에 액션 게임이 있어요</h2>
+    <p>성경에 나오는 일을 직접 해 봐요. 한 번 해 본 게임은 바이블 맵에서 언제든 다시 할 수 있어요.</p>
+  </div>
+</section>
+<div class="marquee" aria-label="액션 게임 목록">
+  <div class="track" id="track"></div>
 </div>
 
-<div class="card">
-  <h2>시즌 1 · 창세기 (창세기 1–50장)</h2>
-  <p>창세기의 흐름을 따라 네 부분으로 나눴어요. 이야기는 성경 순서대로 하나씩 열려요.</p>
-  <h3 class="part">1부 · 태초</h3>
-  <ul class="stories">
-    <li><b>1. 천지창조</b>아무것도 없던 곳에 하나님이 빛과 하늘과 땅을 만드셨어요. 일곱 날 동안 하나님이 하신 일을 보아요.<br><small>창세기 1:1–2:3</small></li>
-    <li><b>2. 에덴동산</b>아담과 함께 아름다운 동산을 가꾸고, 동물들에게 이름을 지어 줘요.<br><small>창세기 2장</small></li>
-    <li><b>3. 선악과와 첫 약속</b>뱀의 거짓말과 하와의 선택. 하나님은 말씀을 어긴 사람들에게도 구원의 약속을 주셨어요.<br><small>창세기 3장</small></li>
-    <li><b>4. 가인과 아벨</b>양을 치는 아벨과 농사짓는 가인. 두 형제가 하나님께 드린 예물과, 화난 마음을 다스리는 이야기.<br><small>창세기 4장</small></li>
-    <li><b>5. 노아의 방주</b>노아 할아버지와 방주를 짓고 동물들을 태워요. 그리고 무지개 약속!<br><small>창세기 6–9장</small></li>
-    <li><b>6. 바벨탑</b>하늘까지 닿는 탑을 쌓아 이름을 높이려던 사람들. 하나님은 사람들의 말을 뒤섞으셨어요.<br><small>창세기 11:1–9</small></li>
-  </ul>
-  <h3 class="part">2부 · 아브라함</h3>
-  <ul class="stories">
-    <li><b>7. 아브라함의 부르심</b>"너는 고향을 떠나 내가 보여 줄 땅으로 가라." 낙타 행렬과 함께 가나안까지 믿음의 여행을 떠나요.<br><small>창세기 12장</small></li>
-    <li><b>8. 롯에게 양보한 아브라함</b>목자들이 다투자 아브라함은 조카 롯에게 먼저 땅을 고르게 했어요. 붙잡혀 간 롯도 구해 내요.<br><small>창세기 13–14장</small></li>
-    <li><b>9. 하늘의 별을 세어 보라</b>셀 수 없이 많은 밤하늘의 별처럼 자손을 주시겠다는 약속. 아브라함은 하나님을 믿었어요.<br><small>창세기 15장</small></li>
-    <li><b>10. 하갈과 이스마엘</b>광야에서 물이 떨어진 하갈과 아이. 하나님은 우는 소리를 들으시고 샘을 보여 주셨어요.<br><small>창세기 16장, 21:8–21</small></li>
-    <li><b>11. 세 손님과 사라의 웃음</b>장막을 찾아온 세 손님을 대접해요. 내년 이맘때 아들을 주시겠다는 약속에 사라가 웃었어요.<br><small>창세기 17–18장</small></li>
-    <li><b>12. 소돔에서 탈출한 롯</b>소돔을 위해 기도한 아브라함. 천사의 손을 잡고 뒤돌아보지 말고 산으로 달려요!<br><small>창세기 18:16–19:29</small></li>
-    <li><b>13. 이삭과 여호와 이레</b>약속대로 태어난 웃음의 아들 이삭. 모리아 산에서 하나님은 숫양을 준비해 두셨어요.<br><small>창세기 21–22장</small></li>
-    <li><b>14. 리브가와 우물</b>이삭의 아내를 찾으러 간 늙은 종의 기도. 낙타 열 마리에게 물을 길어 준 리브가!<br><small>창세기 23–24장</small></li>
-  </ul>
-  <h3 class="part">3부 · 이삭과 야곱</h3>
-  <ul class="stories">
-    <li><b>15. 팥죽 한 그릇</b>쌍둥이 형제 에서와 야곱. 배고픈 에서는 팥죽 한 그릇에 장자의 명분을 팔았어요.<br><small>창세기 25:19–34</small></li>
-    <li><b>16. 다투지 않은 이삭의 우물</b>우물을 빼앗길 때마다 이삭은 다투지 않고 옮겨 가서 다시 팠어요. 하나님이 넓은 곳을 주셨어요.<br><small>창세기 26장</small></li>
-    <li><b>17. 빼앗은 축복</b>눈이 어두운 아버지를 속인 야곱. 거짓말이 가져온 슬픈 결과와 집을 떠나는 길.<br><small>창세기 27장</small></li>
-    <li><b>18. 야곱의 사다리</b>혼자 도망가던 밤, 돌베개를 베고 잠든 야곱. 꿈속에서 하늘에 닿은 사다리를 보았어요.<br><small>창세기 28장</small></li>
-    <li><b>19. 라반의 집에서</b>우물가에서 만난 라헬. 야곱은 칠 년씩 양 떼를 돌보며 일했고, 하나님은 고향으로 돌아가라 하셨어요.<br><small>창세기 29–31장</small></li>
-    <li><b>20. 얍복 강과 형과의 화해</b>형을 만나기 전날 밤 얍복 강가에서 씨름한 야곱. 새 이름 이스라엘, 그리고 형과 끌어안은 날.<br><small>창세기 32–33, 35장</small></li>
-  </ul>
-  <h3 class="part">4부 · 요셉</h3>
-  <ul class="stories">
-    <li><b>21. 요셉의 꿈과 채색옷</b>아버지가 지어 준 채색옷과 이상한 꿈. 형들을 찾아간 요셉은 구덩이에 던져지고 애굽으로 팔려 가요.<br><small>창세기 37장</small></li>
-    <li><b>22. 보디발의 집과 감옥</b>종이 되어도, 억울하게 감옥에 갇혀도 하나님이 요셉과 함께하셨어요. 두 관원의 꿈을 풀어 줘요.<br><small>창세기 39–40장</small></li>
-    <li><b>23. 바로의 꿈과 칠 년 풍년</b>일곱 마리 소와 일곱 이삭의 꿈. 총리가 된 요셉과 함께 풍년 동안 곡식을 창고에 모아요.<br><small>창세기 41장</small></li>
-    <li><b>24. 곡식을 사러 온 형들</b>흉년에 애굽으로 곡식을 사러 온 형들. 요셉은 형들이 정말 달라졌는지 알아보아요.<br><small>창세기 42–44장</small></li>
-    <li><b>25. 내가 요셉이에요</b>"내가 요셉이에요!" 울며 형들을 끌어안은 요셉. 수레를 보내 아버지 야곱을 모셔 와요.<br><small>창세기 45–47장</small></li>
-    <li><b>26. 야곱의 축복과 요셉의 용서</b>열두 아들을 축복한 야곱. "형들은 해하려 했지만 하나님은 선으로 바꾸셨어요." 창세기의 마지막 이야기.<br><small>창세기 48–50장</small></li>
-  </ul>
-</div>
+<section class="section" id="screens">
+  <div class="wrap">
+    <h2 class="sec-title">이렇게 놀아요</h2>
+    <div class="phones">
+      <figure><img src="assets/1-title.jpg" alt="" loading="lazy"><figcaption>하양이의 작은 언덕</figcaption></figure>
+      <figure><img src="assets/2-map.jpg" alt="" loading="lazy"><figcaption>두루마리 바이블 맵</figcaption></figure>
+      <figure><img src="assets/3-word.jpg" alt="" loading="lazy"><figcaption>말씀과 성경 위치</figcaption></figure>
+      <figure><img src="assets/4-ark.jpg" alt="" loading="lazy"><figcaption>방주 짓기</figcaption></figure>
+      <figure><img src="assets/5-stars.jpg" alt="" loading="lazy"><figcaption>별자리 잇기</figcaption></figure>
+      <figure><img src="assets/6-sodom.jpg" alt="" loading="lazy"><figcaption>손그림 컷신</figcaption></figure>
+      <figure><img src="assets/8-joseph.jpg" alt="" loading="lazy"><figcaption>인물들과 대화</figcaption></figure>
+      <figure><img src="assets/9-quiz.jpg" alt="" loading="lazy"><figcaption>성경 퀴즈</figcaption></figure>
+    </div>
+  </div>
+</section>
 
-<div class="card">
-  <h2>이런 점이 좋아요</h2>
-  <ul class="points">
-    <li>모든 이야기에 그 장면에서 가져온 <b>액션 게임</b>이 있어요. 방주 짓기, 별 세기, 소알까지 달리기, 낙타에게 물 길어 주기처럼요. 한 번 해 본 게임은 바이블 맵에서 언제든 다시 할 수 있어요.</li>
-    <li>이야기를 끝까지 보면 <b>성경 퀴즈</b>로 내용을 되짚고 별을 받아요. 틀려도 정답과 성경 위치를 알려 줘요.</li>
-    <li>개역한글 <b>말씀 카드</b>를 이야기마다 한 장씩 모아요.</li>
-    <li>하나님의 말씀에는 성경 본문 위치(예: 창세기 6장 18절)를 함께 보여 줘요.</li>
-    <li>동화책 같은 손그림 원화와 컷신, 인물들의 목소리가 이야기를 들려줘요. 배경음악, 효과음, 목소리는 따로 끌 수 있어요.</li>
-    <li>글자는 화면을 눌러야 넘어가서 천천히 읽을 수 있어요.</li>
-    <li>하나님은 사람 모습으로 그리지 않고 빛으로 표현했어요. 무서운 장면 없이 어린이 눈높이로 만들었어요.</li>
-  </ul>
-</div>
+<section class="section paper">
+  <div class="wrap">
+    <h2 class="sec-title">이런 점이 좋아요</h2>
+    <ul class="features">
+      <li><img src="assets/sheep/2.webp" alt="" loading="lazy"><h3>말씀이 중심이에요</h3><p>하나님의 말씀에는 성경 본문 위치를 함께 보여 주고, 이야기마다 개역한글 말씀 카드를 모아요.</p></li>
+      <li><img src="assets/sheep/1.webp" alt="" loading="lazy"><h3>성경 퀴즈와 별</h3><p>이야기 끝 퀴즈로 내용을 되짚어요. 틀려도 정답과 성경 위치를 알려 주고, 몇 번이든 다시 풀 수 있어요.</p></li>
+      <li><img src="assets/sheep/3.webp" alt="" loading="lazy"><h3>동화책 같은 손그림</h3><p>이야기마다 손그림 컷신이 있고, 인물들의 표정이 대사와 상황에 맞게 바뀌어요.</p></li>
+      <li><img src="assets/sheep/5.webp" alt="" loading="lazy"><h3>목소리로 들려줘요</h3><p>하양이와 인물들의 목소리가 이야기를 들려줘요. 배경음악, 효과음, 목소리는 따로 끌 수 있어요.</p></li>
+      <li><img src="assets/sheep/4.webp" alt="" loading="lazy"><h3>천천히, 내 속도로</h3><p>글자는 화면을 눌러야 넘어가요. 실패해도 잃는 것 없이 다시 해 볼 수 있어요.</p></li>
+      <li><img src="assets/sheep/6.webp" alt="" loading="lazy"><h3>어린이 눈높이</h3><p>하나님은 사람 모습으로 그리지 않고 빛으로 표현했어요. 무서운 장면은 보여 주지 않아요.</p></li>
+    </ul>
+  </div>
+</section>
 
-<div class="card">
-  <h2>부모님과 선생님께</h2>
-  <p>바이블 맵의 "부모님 · 선생님" 화면(어른 확인 후 열림)에서 이야기마다 본문, 핵심 내용, 아이와 나눌 질문 두 가지를 볼 수 있어요. 설명이 필요한 장면에는 지도할 때 살펴볼 점도 적어 두었어요. 주일학교 공과와 함께 활용해 보세요.</p>
-  <ul class="points">
-    <li>광고가 없어요.</li>
-    <li>개인정보를 모으지 않아요. (<a href="privacy.html">개인정보 처리방침</a>)</li>
-    <li>인터넷 없이도 할 수 있어요.</li>
-  </ul>
-</div>
+<section class="section" id="parents">
+  <div class="wrap split">
+    <div class="split-art"><img src="assets/art/map.webp" alt="창세기의 땅을 그린 양피지 바이블 맵" loading="lazy"></div>
+    <div>
+      <h2 class="sec-title">부모님과 선생님께</h2>
+      <p>바이블 맵의 "부모님 · 선생님" 화면(어른 확인 후 열림)에서 이야기마다 본문, 핵심 내용, 아이와 나눌 질문 두 가지를 볼 수 있어요. 설명이 필요한 장면에는 지도할 때 살펴볼 점도 적어 두었어요. 주일학교 공과와 함께 활용해 보세요.</p>
+      <ul class="checks">
+        <li>광고가 없어요</li>
+        <li>개인정보를 모으지 않아요 <a href="privacy.html">개인정보 처리방침</a></li>
+        <li>인터넷 없이도 할 수 있어요</li>
+        <li>성경 인용은 개역한글, 대사는 어린이 말로 쉽게 풀었어요</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<div class="card">
-  <h2>앞으로의 여행</h2>
-  <p>성경 전체를 하나로 이어지는 큰 이야기로 따라가요. 시즌 1은 무료이고, 다음 시즌들은 차례로 준비하고 있어요.</p>
-  <ul class="points">
-    <li><b>시즌 2 · 출애굽과 광야</b> (출애굽기–신명기) 준비 중</li>
-    <li>시즌 3 · 약속의 땅 · 시즌 4 · 왕국 · 시즌 5 · 포로와 소망</li>
-    <li>시즌 6 · 예수님 · 시즌 7 · 교회 · 시즌 8 · 새 하늘과 새 땅</li>
-  </ul>
-</div>
+<section class="seasons" id="seasons">
+  <div class="wrap">
+    <h2 class="sec-title light">성경 전체를 따라가는 여행</h2>
+    <p class="sec-lead light">성경은 하나로 이어지는 큰 이야기예요. 시즌 1은 무료이고, 다음 시즌들도 차례로 준비하고 있어요.</p>
+    <ol class="seals">
+      <li class="now"><span class="seal">1</span><b>창세기</b><small>지금 무료</small></li>
+      <li><span class="seal">2</span><b>출애굽과 광야</b><small>준비 중</small></li>
+      <li><span class="seal">3</span><b>약속의 땅</b><small>준비 중</small></li>
+      <li><span class="seal">4</span><b>왕국</b><small>준비 중</small></li>
+      <li><span class="seal">5</span><b>포로와 소망</b><small>준비 중</small></li>
+      <li><span class="seal">6</span><b>예수님</b><small>준비 중</small></li>
+      <li><span class="seal">7</span><b>교회</b><small>준비 중</small></li>
+      <li><span class="seal">8</span><b>새 하늘과 새 땅</b><small>준비 중</small></li>
+    </ol>
+  </div>
+</section>
 
-<footer>
-  <a href="index.html">소개</a> · <a href="support.html">지원</a> · <a href="privacy.html">개인정보 처리방침</a> · <a href="terms.html">이용약관</a>
-  <p>© 2026 CODESTOVE · <a href="mailto:info@codestove.io">info@codestove.io</a></p>
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="">하하하 바이블 탐험</a>
+    <nav><a href="index.html">소개</a><a href="support.html">지원</a><a href="privacy.html">개인정보 처리방침</a><a href="terms.html">이용약관</a></nav>
+    <p>© 2026 CODESTOVE · <a href="mailto:info@codestove.io">info@codestove.io</a></p>
+  </div>
 </footer>
-</div>
+
+<script>
+const PARTS = ['1부 · 태초', '2부 · 아브라함', '3부 · 이삭과 야곱', '4부 · 요셉'];
+const STORIES = [{"id": "creation", "no": 1, "p": 1, "t": "천지창조", "r": "창세기 1:1–2:3", "s": "아무것도 없던 곳에 하나님이 빛과 하늘과 땅을 만드셨어요. 일곱 날 동안 하나님이 하신 일을 보아요.", "g": [{"t": "새는 하늘로, 물고기는 바다로", "e": "🐟"}]}, {"id": "eden", "no": 2, "p": 1, "t": "에덴동산", "r": "창세기 2장", "s": "아담과 함께 아름다운 동산을 가꾸고, 동물들에게 이름을 지어 줘요.", "g": [{"t": "동산 가꾸기", "e": "💧"}]}, {"id": "promise", "no": 3, "p": 1, "t": "선악과와 첫 약속", "r": "창세기 3장", "s": "뱀의 거짓말과 하와의 선택. 하나님은 말씀을 어긴 사람들에게도 구원의 약속을 주셨어요.", "g": [{"t": "가시덤불 걷어 내기", "e": "🌿"}]}, {"id": "cain", "no": 4, "p": 1, "t": "가인과 아벨", "r": "창세기 4장", "s": "양을 치는 아벨과 농사짓는 가인. 두 형제가 하나님께 드린 예물과, 화난 마음을 다스리는 이야기.", "g": [{"t": "가인의 밭에서 열매 받기", "e": "🍇"}]}, {"id": "noah", "no": 5, "p": 1, "t": "노아의 방주", "r": "창세기 6–9장", "s": "노아 할아버지와 방주를 짓고 동물들을 태워요. 그리고 무지개 약속!", "g": [{"t": "방주 짓기", "e": "🔨"}]}, {"id": "babel", "no": 6, "p": 1, "t": "바벨탑", "r": "창세기 11:1–9", "s": "하늘까지 닿는 탑을 쌓아 이름을 높이려던 사람들. 하나님은 사람들의 말을 뒤섞으셨어요.", "g": [{"t": "벽돌로 탑 쌓기", "e": "🧱"}]}, {"id": "call", "no": 7, "p": 2, "t": "아브라함의 부르심", "r": "창세기 12장", "s": "\"너는 고향을 떠나 내가 보여 줄 땅으로 가라.\" 낙타 행렬과 함께 가나안까지 믿음의 여행을 떠나요.", "g": [{"t": "가나안으로 가는 길", "e": "🐪"}, {"t": "제단 쌓기", "e": "🪨"}]}, {"id": "yield", "no": 8, "p": 2, "t": "롯에게 양보한 아브라함", "r": "창세기 13–14장", "s": "목자들이 다투자 아브라함은 조카 롯에게 먼저 땅을 고르게 했어요. 붙잡혀 간 롯도 구해 내요.", "g": [{"t": "롯을 구하러 가는 밤길", "e": "🌙"}]}, {"id": "stars", "no": 9, "p": 2, "t": "하늘의 별을 세어 보라", "r": "창세기 15장", "s": "셀 수 없이 많은 밤하늘의 별처럼 자손을 주시겠다는 약속. 아브라함은 하나님을 믿었어요.", "g": [{"t": "별을 세어 보라", "e": "⭐"}]}, {"id": "hagar", "no": 10, "p": 2, "t": "하갈과 이스마엘", "r": "창세기 16장, 21:8–21", "s": "광야에서 물이 떨어진 하갈과 아이. 하나님은 우는 소리를 들으시고 샘을 보여 주셨어요.", "g": [{"t": "샘물로 가죽부대 채우기", "e": "💧"}]}, {"id": "laugh", "no": 11, "p": 2, "t": "세 손님과 사라의 웃음", "r": "창세기 17–18장", "s": "장막을 찾아온 세 손님을 대접해요. 내년 이맘때 아들을 주시겠다는 약속에 사라가 웃었어요.", "g": [{"t": "떡 받기", "e": "🍞"}]}, {"id": "sodom", "no": 12, "p": 2, "t": "소돔에서 탈출한 롯", "r": "창세기 18:16–19:29", "s": "소돔을 위해 기도한 아브라함. 천사의 손을 잡고 뒤돌아보지 말고 산으로 달려요!", "g": [{"t": "소알까지 달리기", "e": "🏃"}]}, {"id": "jireh", "no": 13, "p": 2, "t": "이삭과 여호와 이레", "r": "창세기 21–22장", "s": "약속대로 태어난 웃음의 아들 이삭. 모리아 산에서 하나님은 숫양을 준비해 두셨어요.", "g": [{"t": "모리아 산 오르기", "e": "⛰️"}]}, {"id": "rebekah", "no": 14, "p": 2, "t": "리브가와 우물", "r": "창세기 23–24장", "s": "이삭의 아내를 찾으러 간 늙은 종의 기도. 낙타 열 마리에게 물을 길어 준 리브가!", "g": [{"t": "낙타 열 마리에게 물 길어 주기", "e": "🐪"}]}, {"id": "stew", "no": 15, "p": 3, "t": "팥죽 한 그릇", "r": "창세기 25:19–34", "s": "쌍둥이 형제 에서와 야곱. 배고픈 에서는 팥죽 한 그릇에 장자의 명분을 팔았어요.", "g": [{"t": "지친 몸으로 장막까지", "e": "🏃"}]}, {"id": "wells", "no": 16, "p": 3, "t": "다투지 않은 이삭의 우물", "r": "창세기 26장", "s": "우물을 빼앗길 때마다 이삭은 다투지 않고 옮겨 가서 다시 팠어요. 하나님이 넓은 곳을 주셨어요.", "g": [{"t": "백 배의 곡식 거두기", "e": "🌾"}]}, {"id": "blessing", "no": 17, "p": 3, "t": "빼앗은 축복", "r": "창세기 27장", "s": "눈이 어두운 아버지를 속인 야곱. 거짓말이 가져온 슬픈 결과와 집을 떠나는 길.", "g": [{"t": "하란으로 떠나는 길", "e": "🎒"}]}, {"id": "ladder", "no": 18, "p": 3, "t": "야곱의 사다리", "r": "창세기 28장", "s": "혼자 도망가던 밤, 돌베개를 베고 잠든 야곱. 꿈속에서 하늘에 닿은 사다리를 보았어요.", "g": [{"t": "돌기둥 세우고 기름 붓기", "e": "🪨"}]}, {"id": "laban", "no": 19, "p": 3, "t": "라반의 집에서", "r": "창세기 29–31장", "s": "우물가에서 만난 라헬. 야곱은 칠 년씩 양 떼를 돌보며 일했고, 하나님은 고향으로 돌아가라 하셨어요.", "g": [{"t": "늘어나는 양 떼 받기", "e": "🐑"}]}, {"id": "jabbok", "no": 20, "p": 3, "t": "얍복 강과 형과의 화해", "r": "창세기 32–33, 35장", "s": "형을 만나기 전날 밤 얍복 강가에서 씨름한 야곱. 새 이름 이스라엘, 그리고 형과 끌어안은 날.", "g": [{"t": "날이 새도록 꽉 붙들기", "e": "🤼"}]}, {"id": "dreams", "no": 21, "p": 4, "t": "요셉의 꿈과 채색옷", "r": "창세기 37장", "s": "아버지가 지어 준 채색옷과 이상한 꿈. 형들을 찾아간 요셉은 구덩이에 던져지고 애굽으로 팔려 가요.", "g": [{"t": "꿈속 곡식 단 쌓기", "e": "🌾"}]}, {"id": "prison", "no": 22, "p": 4, "t": "보디발의 집과 감옥", "r": "창세기 39–40장", "s": "종이 되어도, 억울하게 감옥에 갇혀도 하나님이 요셉과 함께하셨어요. 두 관원의 꿈을 풀어 줘요.", "g": [{"t": "포도를 바로의 잔에", "e": "🍇"}]}, {"id": "pharaoh", "no": 23, "p": 4, "t": "바로의 꿈과 칠 년 풍년", "r": "창세기 41장", "s": "일곱 마리 소와 일곱 이삭의 꿈. 총리가 된 요셉과 함께 풍년 동안 곡식을 창고에 모아요.", "g": [{"t": "일곱째 해 곡식 받기", "e": "🌾"}]}, {"id": "grain", "no": 24, "p": 4, "t": "곡식을 사러 온 형들", "r": "창세기 42–44장", "s": "흉년에 애굽으로 곡식을 사러 온 형들. 요셉은 형들이 정말 달라졌는지 알아보아요.", "g": [{"t": "나귀에 곡식 자루 싣기", "e": "🫏"}]}, {"id": "reveal", "no": 25, "p": 4, "t": "내가 요셉이에요", "r": "창세기 45–47장", "s": "\"내가 요셉이에요!\" 울며 형들을 끌어안은 요셉. 수레를 보내 아버지 야곱을 모셔 와요.", "g": [{"t": "수레를 타고 애굽으로", "e": "🛒"}]}, {"id": "forgive", "no": 26, "p": 4, "t": "야곱의 축복과 요셉의 용서", "r": "창세기 48–50장", "s": "열두 아들을 축복한 야곱. \"형들은 해하려 했지만 하나님은 선으로 바꾸셨어요.\" 창세기의 마지막 이야기.", "g": [{"t": "형들의 가족에게 양식 나누기", "e": "🍞"}]}];
+</script>
+<script src="site.js"></script>
 </body>
 </html>
