@@ -216,17 +216,6 @@ b { font-weight: 700; }
 .badges a { display: block; transition: transform 0.2s; }
 .badges a:hover { transform: translateY(-2px); }
 .badges img { height: 52px; width: auto; }
-
-.badge-note {
-  display: inline-block;
-  margin: 10px 0 0;
-  padding: 2px 12px;
-  border-radius: 999px;
-  background: rgba(255, 250, 240, 0.85);
-  font-size: 14px;
-  color: var(--ink-2);
-}
-
 .stats {
   position: relative;
   z-index: 1;
@@ -701,7 +690,6 @@ b { font-weight: 700; }
 
 .get { max-width: 560px; text-align: left; }
 .get h3 { font-family: var(--display); font-weight: 400; font-size: 28px; margin: 0 0 18px; }
-.get .badge-note { color: #d9cfe9; background: none; }
 
 /* ---------- 바닥 ---------- */
 .site-footer {
