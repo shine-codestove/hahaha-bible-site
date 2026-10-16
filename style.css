@@ -586,6 +586,7 @@ b { font-weight: 700; }
 }
 
 .videos figcaption { font-family: var(--display); color: var(--ink-2); margin-top: 12px; }
+.videos-more { text-align: center; margin: 34px 0 0; }
 
 /* ---------- 좋은 점 ---------- */
 .features {
