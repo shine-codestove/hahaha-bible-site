@@ -560,6 +560,33 @@ b { font-weight: 700; }
 
 .phones figcaption { font-family: var(--display); color: var(--ink-2); margin-top: 12px; }
 
+/* ---------- 영상 ---------- */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+.videos figure {
+  margin: 0;
+  flex: 0 1 300px;
+  text-align: center;
+}
+
+.videos video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border-radius: 34px;
+  border: 9px solid var(--ink);
+  box-shadow: var(--shadow);
+  background: var(--ink);
+  object-fit: cover;
+}
+
+.videos figcaption { font-family: var(--display); color: var(--ink-2); margin-top: 12px; }
+
 /* ---------- 좋은 점 ---------- */
 .features {
   list-style: none;
