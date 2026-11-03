@@ -891,3 +891,8 @@ html[lang='en'] .logo-type { font-size: clamp(46px, 7vw, 96px); }
   html[lang='en'] .brand { font-size: 17px; }
   .lang-switch { margin-left: auto; font-size: 14px; padding: 5px 10px; }
 }
+/* 메뉴 글이 한 글자씩 꺾이지 않게. 영어 메뉴는 길어서 태블릿 너비부터 숨긴다 (휴대폰처럼) */
+.menu a { white-space: nowrap; }
+@media (max-width: 980px) {
+  html[lang='en'] .menu { display: none; }
+}
