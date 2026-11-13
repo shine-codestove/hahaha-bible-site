@@ -831,3 +831,42 @@ b { font-weight: 700; }
   .card { padding: 24px 20px; }
   .page-hero img { width: 100px; right: 4%; }
 }
+
+/* ---------- 시즌 2 출시 준비 중 ---------- */
+.s2 { background: linear-gradient(180deg, #f6ead2 0%, #e9d6b0 100%); }
+.s2-chip {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: var(--seal);
+  color: #fff;
+  font-family: var(--display);
+  font-size: 16px;
+}
+.s2-parts { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-wrap: wrap; gap: 8px 10px; }
+.s2-parts li { padding: 6px 14px; border-radius: 999px; background: rgba(255, 255, 255, 0.6); border: 2px solid var(--edge); font-size: 15px; }
+.s2-parts b { font-family: var(--display); font-weight: 400; color: var(--seal); margin-right: 6px; }
+.s2-grid { grid-template-columns: repeat(5, 1fr); }
+.story.soon { cursor: default; }
+.story.soon img { filter: saturate(0.85); }
+.soon-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(30, 18, 10, 0.72);
+  color: var(--gold-2);
+  font-family: var(--display);
+  font-size: 14px;
+}
+.s2-note { margin: 28px 0 0; color: var(--ink-2); }
+.seals .next .seal {
+  background: radial-gradient(circle at 35% 30%, #f0b54a, #c98522);
+  color: #fff;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.25), 0 0 0 4px rgba(246, 207, 107, 0.55);
+}
+.seals .next small { color: var(--gold-2); }
+@media (max-width: 980px) { .s2-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .s2-grid { grid-template-columns: repeat(2, 1fr); } .s2-parts li { font-size: 14px; } }
