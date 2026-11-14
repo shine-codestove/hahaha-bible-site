@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en" data-base="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hahaha Bible Adventure – A Bible journey with Haya the lamb</title>
+<meta name="description" content="A children's Bible game: walk, help and choose your way through all 26 stories of Genesis, from Creation to Joseph, with Haya the little lamb. No ads, no data collection.">
+<meta name="theme-color" content="#2b1d14">
+<meta property="og:title" content="Hahaha Bible Adventure">
+<meta property="og:description" content="A Bible journey with Haya the lamb · 26 stories from Genesis">
+<meta property="og:image" content="../assets/og.jpg">
+<link rel="alternate" hreflang="ko" href="https://shine-codestove.github.io/hahaha-bible-site/index.html">
+<link rel="alternate" hreflang="en" href="https://shine-codestove.github.io/hahaha-bible-site/en/index.html">
+<link rel="alternate" hreflang="x-default" href="https://shine-codestove.github.io/hahaha-bible-site/en/index.html">
+<link rel="icon" type="image/png" href="../assets/icon.png">
+<link rel="apple-touch-icon" href="../assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css?v=20261103">
+</head>
+<body class="home">
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="index.html"><img src="../assets/icon.png" alt="">Hahaha Bible Adventure</a>
+    <nav class="menu">
+      <a href="#stories">Stories</a>
+      <a href="#play">Games</a>
+      <a href="#videos">Videos</a>
+      <a href="#parents">Parents</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a class="lang-switch" href="../index.html" hreflang="ko" lang="ko" data-lang="ko">🌐 한국어</a>
+    <a class="pill-btn small" href="#get">Get the App</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img class="hero-bg" src="../assets/art/hero.webp" alt="Haya the lamb holding a scroll on a hill, looking out over the Garden of Eden, the ark and the rainbow, the Tower of Babel, Abraham's tents and the pyramids of Egypt">
+  <div class="hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow">A children's Bible adventure · Season 1: Genesis</p>
+      <h1 class="logo-type"><span class="r">Ha</span><span class="o">ha</span><span class="b">ha</span><br>Bible <span class="y">Adventure</span></h1>
+      <p class="lead">Walk, help and choose your way through the Bible with <b>Haya</b> the little lamb, and experience God's story for yourself. From Creation to Joseph, travel through the whole book of Genesis in 26 stories.</p>
+      <div class="cta">
+        <a class="pill-btn" href="#stories">See all 26 stories</a>
+        <a class="ghost-btn" href="#parents">For parents &amp; teachers</a>
+      </div>
+      <div class="badges">
+        <a href="https://apps.apple.com/app/id6821260857" target="_blank" rel="noopener"><img src="../assets/badges/app-store-en.svg" alt="Download on the App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=io.codestove.biblejourney&amp;hl=en" target="_blank" rel="noopener"><img src="../assets/badges/google-play-en.png" alt="Get it on Google Play"></a>
+      </div>
+      <ul class="stats">
+        <li><b>26</b>Stories</li>
+        <li><b>27</b>Action games</li>
+        <li><b>26</b>Verse cards</li>
+        <li><b>0</b>Ads</li>
+      </ul>
+    </div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 C 240 90 480 0 720 30 S 1200 80 1440 30 L1440 80 L0 80 Z"/></svg>
+</section>
+
+<section class="spotlight" id="spotlight" aria-roledescription="carousel" aria-label="Browse the stories">
+  <div class="sp-in">
+    <div class="sp-art">
+      <img id="sp-img" src="../assets/art/creation.webp" alt="">
+      <span class="sp-part" id="sp-part">Part 1 · The Beginning</span>
+    </div>
+    <div class="sp-copy" aria-live="polite">
+      <p class="sp-count">Story <span id="sp-no">01</span> / 26</p>
+      <h2 id="sp-title">The Creation</h2>
+      <div class="sp-bars" id="sp-bars"></div>
+      <p class="sp-ref" id="sp-ref">Genesis 1:1–2:3</p>
+      <p class="sp-sum" id="sp-sum"></p>
+      <p class="sp-game" id="sp-game"></p>
+      <div class="sp-nav">
+        <button type="button" class="round" id="sp-prev" aria-label="Previous story">‹</button>
+        <button type="button" class="round" id="sp-next" aria-label="Next story">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section paper" id="stories">
+  <div class="wrap">
+    <h2 class="sec-title">26 Stories from Genesis</h2>
+    <p class="sec-lead">Following the flow of Genesis in four parts. Stories open one by one in Bible order, and at the end of each one a Verse Card and a Bible quiz are waiting.</p>
+    <div class="tabs" role="tablist" id="tabs"></div>
+    <ul class="story-grid" id="grid"></ul>
+  </div>
+</section>
+
+<section class="banner" id="play">
+  <img class="banner-bg" src="../assets/art/rainbow.webp" alt="Noah's family and the animals by the ark under a rainbow">
+  <div class="banner-card">
+    <h2>Every story has an action game</h2>
+    <p>Do what happens in the Bible yourself. Any game you've played once can be played again anytime from the Bible Map.</p>
+  </div>
+</section>
+<div class="marquee" aria-label="Action games">
+  <div class="track" id="track"></div>
+</div>
+
+<section class="section paper" id="videos">
+  <div class="wrap">
+    <h2 class="sec-title">Watch the videos</h2>
+    <p class="sec-lead">A short teaser where the hand-painted art comes to life, and real gameplay. <small>(These videos are in Korean for now. English versions are coming soon.)</small></p>
+    <div class="videos">
+      <figure>
+        <video src="../assets/video/teaser.mp4" poster="../assets/video/teaser.jpg" controls playsinline preload="none" aria-label="Teaser: hand-painted scenes from Genesis with Bible verses (Korean)"></video>
+        <figcaption>Teaser · 31 sec</figcaption>
+      </figure>
+      <figure>
+        <video src="../assets/video/gameplay.mp4" poster="../assets/video/gameplay.jpg" controls playsinline preload="none" aria-label="Gameplay: Creation, Noah, the Tower of Babel game and the Bible quiz (Korean)"></video>
+        <figcaption>Gameplay · 29 sec</figcaption>
+      </figure>
+    </div>
+    <p class="videos-more"><a class="ghost-btn" href="https://www.youtube.com/@hahahabible" target="_blank" rel="noopener">▶ More on YouTube</a></p>
+  </div>
+</section>
+
+<section class="section" id="screens">
+  <div class="wrap">
+    <h2 class="sec-title">How it plays</h2>
+    <div class="phones">
+      <figure><img src="../assets/en/1-title.jpg" alt="" loading="lazy"><figcaption>Haya's little hill</figcaption></figure>
+      <figure><img src="../assets/en/2-map.jpg" alt="" loading="lazy"><figcaption>The scroll Bible Map</figcaption></figure>
+      <figure><img src="../assets/en/3-word.jpg" alt="" loading="lazy"><figcaption>Bible references in every scene</figcaption></figure>
+      <figure><img src="../assets/en/4-ark.jpg" alt="" loading="lazy"><figcaption>Building the ark</figcaption></figure>
+      <figure><img src="../assets/en/5-stars.jpg" alt="" loading="lazy"><figcaption>Counting the stars</figcaption></figure>
+      <figure><img src="../assets/en/6-sodom.jpg" alt="" loading="lazy"><figcaption>Hand-painted cutscenes</figcaption></figure>
+      <figure><img src="../assets/en/8-joseph.jpg" alt="" loading="lazy"><figcaption>Talking with Bible characters</figcaption></figure>
+      <figure><img src="../assets/en/9-quiz.jpg" alt="" loading="lazy"><figcaption>Bible quiz</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section paper">
+  <div class="wrap">
+    <h2 class="sec-title">Why families love it</h2>
+    <ul class="features">
+      <li><img src="../assets/sheep/2.webp" alt="" loading="lazy"><h3>The Bible at the center</h3><p>God's words always show their Bible reference, and every story gives a Verse Card to collect, based on the World English Bible.</p></li>
+      <li><img src="../assets/sheep/1.webp" alt="" loading="lazy"><h3>Bible quizzes and stars</h3><p>A quiz at the end of each story helps kids remember. Wrong answers show the right one and where it is in the Bible, and quizzes can be retried anytime.</p></li>
+      <li><img src="../assets/sheep/3.webp" alt="" loading="lazy"><h3>Storybook art</h3><p>Every story has hand-painted cutscenes, and characters' faces change with what they say and feel.</p></li>
+      <li><img src="../assets/sheep/5.webp" alt="" loading="lazy"><h3>Voiced stories</h3><p>Haya and the characters tell the story out loud. Music, sound effects and voices can each be turned off.</p></li>
+      <li><img src="../assets/sheep/4.webp" alt="" loading="lazy"><h3>At your own pace</h3><p>Text only moves on when you tap. Nothing is lost when you make a mistake. Just try again.</p></li>
+      <li><img src="../assets/sheep/6.webp" alt="" loading="lazy"><h3>Made for kids</h3><p>God is never drawn as a person, only shown as light. Scary moments are told gently, never shown.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="parents">
+  <div class="wrap split">
+    <div class="split-art"><img src="../assets/art/map.webp" alt="A parchment Bible Map of the lands of Genesis" loading="lazy"></div>
+    <div>
+      <h2 class="sec-title">For parents &amp; teachers</h2>
+      <p>Every story follows the Bible text closely: God's words show where they come from, each story ends with a Bible quiz, and a Verse Card with a kid-friendly explanation goes into the collection. It works well alongside Sunday school lessons. Pick any finished story on the Bible Map to review it.</p>
+      <ul class="checks">
+        <li>No ads</li>
+        <li>No personal data collected <a href="privacy.html">Privacy Policy</a></li>
+        <li>Works without the internet</li>
+        <li>Scripture from the World English Bible (public domain); dialogue retold in simple words for children</li>
+        <li>Available in English and Korean, with more languages on the way</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="seasons" id="seasons">
+  <div class="wrap">
+    <h2 class="sec-title light">A journey through the whole Bible</h2>
+    <p class="sec-lead light">The Bible is one big story. Season 1 is free, and the next seasons are on their way.</p>
+    <ol class="seals">
+      <li class="now"><span class="seal">1</span><b>Genesis</b><small>Free now</small></li>
+      <li><span class="seal">2</span><b>Exodus &amp; the Wilderness</b><small>Coming soon</small></li>
+      <li><span class="seal">3</span><b>The Promised Land</b><small>Coming soon</small></li>
+      <li><span class="seal">4</span><b>The Kingdom</b><small>Coming soon</small></li>
+      <li><span class="seal">5</span><b>Exile &amp; Hope</b><small>Coming soon</small></li>
+      <li><span class="seal">6</span><b>Jesus</b><small>Coming soon</small></li>
+      <li><span class="seal">7</span><b>The Church</b><small>Coming soon</small></li>
+      <li><span class="seal">8</span><b>A New Heaven and Earth</b><small>Coming soon</small></li>
+    </ol>
+    <div class="get" id="get">
+      <h3>Ready to set off with Haya?</h3>
+      <div class="badges">
+        <a href="https://apps.apple.com/app/id6821260857" target="_blank" rel="noopener"><img src="../assets/badges/app-store-en.svg" alt="Download on the App Store"></a>
+        <a href="https://play.google.com/store/apps/details?id=io.codestove.biblejourney&amp;hl=en" target="_blank" rel="noopener"><img src="../assets/badges/google-play-en.png" alt="Get it on Google Play"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="../assets/icon.png" alt="">Hahaha Bible Adventure</a>
+    <nav><a href="index.html">About</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="https://www.youtube.com/@hahahabible" target="_blank" rel="noopener">YouTube</a></nav>
+    <p><a href="../index.html" hreflang="ko" lang="ko" data-lang="ko">한국어</a> · © 2026 CODESTOVE · <a href="mailto:info@codestove.io">info@codestove.io</a></p>
+  </div>
+</footer>
+
+<script>
+const PARTS = ['Part 1 · The Beginning', 'Part 2 · Abraham', 'Part 3 · Isaac and Jacob', 'Part 4 · Joseph'];
+const STORIES = [{"id":"creation","no":1,"p":1,"t":"The Creation","r":"Genesis 1:1–2:3","s":"Where there was nothing at all, God made light, the sky, and the land. Let's see what God did over seven days.","g":[{"t":"Birds to the Sky, Fish to the Sea","e":"🐟"}]},{"id":"eden","no":2,"p":1,"t":"The Garden of Eden","r":"Genesis 2","s":"Take care of a beautiful garden with Adam, and give names to the animals.","g":[{"t":"Tend the Garden","e":"💧"}]},{"id":"promise","no":3,"p":1,"t":"The Fruit and the Promise","r":"Genesis 3","s":"The serpent's lie and Eve's choice. Even when people disobeyed His word, God gave them a promise to save them.","g":[{"t":"Clear the Thorns","e":"🌿"}]},{"id":"cain","no":4,"p":1,"t":"Cain and Abel","r":"Genesis 4","s":"Abel kept sheep and Cain grew crops. A story of two brothers' gifts to God, and of calming an angry heart.","g":[{"t":"Catch Fruit in Cain's Field","e":"🍇"}]},{"id":"noah","no":5,"p":1,"t":"Noah's Ark","r":"Genesis 6–9","s":"Build the ark with Grandpa Noah and bring the animals aboard. And then, the rainbow promise!","g":[{"t":"Build the Ark","e":"🔨"}]},{"id":"babel","no":6,"p":1,"t":"The Tower of Babel","r":"Genesis 11:1–9","s":"People built a tower up to the sky to make a great name for themselves. God mixed up their language.","g":[{"t":"Stack the Brick Tower","e":"🧱"}]},{"id":"call","no":7,"p":2,"t":"God Calls Abraham","r":"Genesis 12","s":"\"Leave your country and go to the land I will show you.\" Set off with a camel caravan on a journey of faith to Canaan.","g":[{"t":"The Road to Canaan","e":"🐪"},{"t":"Build an Altar","e":"🪨"}]},{"id":"yield","no":8,"p":2,"t":"Abraham Lets Lot Choose","r":"Genesis 13–14","s":"When the herdsmen quarreled, Abraham let his nephew Lot choose the land first. Then he rescues Lot, who was taken away.","g":[{"t":"Rescue Lot by Night","e":"🌙"}]},{"id":"stars","no":9,"p":2,"t":"Count the Stars","r":"Genesis 15","s":"God promised Abraham a family as many as the stars in the night sky, too many to count. Abraham believed God.","g":[{"t":"Count the Stars","e":"⭐"}]},{"id":"hagar","no":10,"p":2,"t":"Hagar and Ishmael","r":"Genesis 16, 21:8–21","s":"Hagar and her boy ran out of water in the wilderness. God heard the crying and showed her a well.","g":[{"t":"Fill the Water Skin","e":"💧"}]},{"id":"laugh","no":11,"p":2,"t":"Sarah's Laugh","r":"Genesis 17–18","s":"Welcome the three visitors who came to the tent. Sarah laughed at the promise of a son by this time next year.","g":[{"t":"Catch the Bread","e":"🍞"}]},{"id":"sodom","no":12,"p":2,"t":"Lot Escapes Sodom","r":"Genesis 18:16–19:29","s":"Abraham prayed for Sodom. Hold the angel's hand and run to the mountains without looking back!","g":[{"t":"Run to Zoar","e":"🏃"}]},{"id":"jireh","no":13,"p":2,"t":"The LORD Will Provide","r":"Genesis 21–22","s":"Isaac, the son of laughter, was born just as God promised. On Mount Moriah, God had a ram ready.","g":[{"t":"Climb Mount Moriah","e":"⛰️"}]},{"id":"rebekah","no":14,"p":2,"t":"Rebekah at the Well","r":"Genesis 23–24","s":"The old servant prayed as he looked for a wife for Isaac. Then Rebekah drew water for ten camels!","g":[{"t":"Water Ten Camels","e":"🐪"}]},{"id":"stew","no":15,"p":3,"t":"One Bowl of Stew","r":"Genesis 25:19–34","s":"Twin brothers Esau and Jacob. Hungry Esau sold his rights as the firstborn son for one bowl of red stew.","g":[{"t":"Run Home, Tired and Hungry","e":"🏃"}]},{"id":"wells","no":16,"p":3,"t":"Isaac's Peaceful Wells","r":"Genesis 26","s":"Each time his wells were taken, Isaac didn't fight. He moved on and dug again, and God gave him plenty of room.","g":[{"t":"A Hundred Times the Harvest","e":"🌾"}]},{"id":"blessing","no":17,"p":3,"t":"The Stolen Blessing","r":"Genesis 27","s":"Jacob tricked his father, whose eyes could not see well. The sad result of a lie, and the road away from home.","g":[{"t":"The Road to Haran","e":"🎒"}]},{"id":"ladder","no":18,"p":3,"t":"Jacob's Ladder","r":"Genesis 28","s":"Running away alone one night, Jacob fell asleep with a stone for a pillow. In a dream he saw a ladder reaching up to heaven.","g":[{"t":"Set Up the Pillar, Pour the Oil","e":"🪨"}]},{"id":"laban","no":19,"p":3,"t":"At Laban's House","r":"Genesis 29–31","s":"Jacob met Rachel at the well. He worked caring for the flocks, seven years at a time, and then God told him to go back home.","g":[{"t":"Catch the Growing Flock","e":"🐑"}]},{"id":"jabbok","no":20,"p":3,"t":"Peace at the Jabbok","r":"Genesis 32–33, 35","s":"The night before meeting his brother, Jacob wrestled by the Jabbok River. A new name, Israel, and the day the two brothers hugged.","g":[{"t":"Hold On Till Daybreak","e":"🤼"}]},{"id":"dreams","no":21,"p":4,"t":"Joseph's Colorful Coat","r":"Genesis 37","s":"A coat of many colors from his father, and strange dreams. Joseph went to find his brothers, was thrown into a pit, and was sold to Egypt.","g":[{"t":"Stack the Dream Sheaves","e":"🌾"}]},{"id":"prison","no":22,"p":4,"t":"Potiphar and the Prison","r":"Genesis 39–40","s":"As a servant, and even when he was unfairly put in prison, God was with Joseph. Help explain the dreams of two officials.","g":[{"t":"Grapes for Pharaoh's Cup","e":"🍇"}]},{"id":"pharaoh","no":23,"p":4,"t":"Pharaoh's Dreams","r":"Genesis 41","s":"A dream of seven cows and seven heads of grain. Joseph becomes ruler over Egypt. Help him store grain during the years of plenty.","g":[{"t":"Catch the Grain: Year 7","e":"🌾"}]},{"id":"grain","no":24,"p":4,"t":"The Brothers Buy Grain","r":"Genesis 42–44","s":"In the famine, the brothers came to Egypt to buy grain. Joseph finds out if they have really changed.","g":[{"t":"Load the Donkeys","e":"🫏"}]},{"id":"reveal","no":25,"p":4,"t":"I Am Joseph","r":"Genesis 45–47","s":"\"I am Joseph!\" Crying, Joseph hugged his brothers. He sends wagons to bring his father Jacob.","g":[{"t":"Wagons to Egypt","e":"🛒"}]},{"id":"forgive","no":26,"p":4,"t":"Blessing and Forgiveness","r":"Genesis 48–50","s":"Jacob blessed his twelve sons. \"You meant to harm me, but God meant it for good.\" The last story of Genesis.","g":[{"t":"Feed the Families","e":"🍞"}]}];
+</script>
+<script src="../site.js?v=20261103"></script>
+</body>
+</html>

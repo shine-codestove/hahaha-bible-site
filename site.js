@@ -1,6 +1,44 @@
+/*
+ * 모든 페이지: 언어 바꾸기 (한국어 / English).
+ * 고른 언어를 기억하고, 처음 온 사람의 브라우저 언어가 이 페이지 언어와 다르면 다른 언어 페이지를 작게 알려 준다 (자동으로 옮기지 않는다).
+ * 영어 페이지는 en/ 폴더에 있고 그림·스크립트는 위 폴더의 것을 같이 쓴다 (<html data-base="../">).
+ */
+(() => {
+  const LANG = document.documentElement.lang;
+  const KEY = 'site-lang';
+  const store = (v) => {
+    try {
+      if (v) localStorage.setItem(KEY, v);
+      return localStorage.getItem(KEY);
+    } catch {
+      return null;
+    }
+  };
+  document.querySelectorAll('a[data-lang]').forEach((a) => a.addEventListener('click', () => store(a.dataset.lang)));
+  const other = document.querySelector('.lang-switch');
+  if (!other || store()) return;
+  const wants = (navigator.languages || [navigator.language]).map((l) => String(l).toLowerCase().split('-')[0]);
+  const target = other.dataset.lang;
+  // 이 페이지 언어가 브라우저 언어 목록에 있으면 그대로, 없고 다른 언어가 있으면 알려 준다
+  if (wants.includes(LANG) || !(wants.includes(target) || target === 'en')) return;
+  const hint = document.createElement('div');
+  hint.className = 'lang-hint';
+  hint.lang = target;
+  hint.innerHTML = target === 'en'
+    ? '<span>This page is also available in English.</span><a href="">View in English</a><button type="button" aria-label="Close">×</button>'
+    : '<span>이 페이지는 한국어로도 볼 수 있어요.</span><a href="">한국어로 보기</a><button type="button" aria-label="닫기">×</button>';
+  hint.querySelector('a').href = other.href;
+  hint.querySelector('a').addEventListener('click', () => store(target));
+  hint.querySelector('button').addEventListener('click', () => (store(LANG), hint.remove()));
+  document.body.appendChild(hint);
+})();
+
 /* 소개 페이지: 이야기 둘러보기(캐러셀), 부별 이야기 카드, 액션 게임 띠 */
 (() => {
+  if (typeof STORIES === 'undefined') return;
   const $ = (id) => document.getElementById(id);
+  const BASE = document.documentElement.dataset.base || '';
+  const EN = document.documentElement.lang === 'en';
   const pad = (n) => String(n).padStart(2, '0');
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -20,8 +58,8 @@
     const s = STORIES[cur];
     img.classList.add('out');
     setTimeout(() => {
-      img.src = `assets/art/${s.id}.webp`;
-      img.alt = `${s.t} 장면`;
+      img.src = `${BASE}assets/art/${s.id}.webp`;
+      img.alt = EN ? `A scene from ${s.t}` : `${s.t} 장면`;
       img.onload = () => img.classList.remove('out');
     }, reduce ? 0 : 220);
     $('sp-no').textContent = pad(s.no);
@@ -69,7 +107,7 @@
     list.forEach((s) => {
       const li = document.createElement('li');
       li.innerHTML = `<button type="button" class="story">
-        <img src="assets/art/${s.id}.webp" alt="" loading="lazy">
+        <img src="${BASE}assets/art/${s.id}.webp" alt="" loading="lazy">
         <span class="txt"><small>${pad(s.no)}</small><b></b><em></em></span></button>`;
       li.querySelector('b').textContent = s.t;
       li.querySelector('em').textContent = s.r;

@@ -9,12 +9,15 @@
 <meta property="og:title" content="하하하 바이블 탐험">
 <meta property="og:description" content="하양이와 함께 떠나는 성경 여행 · 창세기 26개 이야기">
 <meta property="og:image" content="assets/og.jpg">
+<link rel="alternate" hreflang="ko" href="https://shine-codestove.github.io/hahaha-bible-site/index.html">
+<link rel="alternate" hreflang="en" href="https://shine-codestove.github.io/hahaha-bible-site/en/index.html">
+<link rel="alternate" hreflang="x-default" href="https://shine-codestove.github.io/hahaha-bible-site/en/index.html">
 <link rel="icon" type="image/png" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jua&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261103">
 </head>
 <body class="home">
 
@@ -29,6 +32,7 @@
       <a href="#parents">부모님께</a>
       <a href="support.html">지원</a>
     </nav>
+    <a class="lang-switch" href="en/index.html" hreflang="en" lang="en" data-lang="en">🌐 English</a>
     <a class="pill-btn small" href="#get">앱 받기</a>
   </div>
 </header>
@@ -185,12 +189,13 @@
     <div class="split-art"><img src="assets/art/map.webp" alt="창세기의 땅을 그린 양피지 바이블 맵" loading="lazy"></div>
     <div>
       <h2 class="sec-title">부모님과 선생님께</h2>
-      <p>바이블 맵의 "부모님 · 선생님" 화면(어른 확인 후 열림)에서 이야기마다 본문, 핵심 내용, 아이와 나눌 질문 두 가지를 볼 수 있어요. 설명이 필요한 장면에는 지도할 때 살펴볼 점도 적어 두었어요. 주일학교 공과와 함께 활용해 보세요.</p>
+      <p>하나님의 말씀마다 성경 위치를 보여 주고, 이야기 끝 성경 퀴즈와 쉬운 풀이가 있는 말씀 카드로 내용을 되짚어요. 끝낸 이야기는 바이블 맵에서 골라 다시 볼 수 있어 주일학교 공과 복습에 좋아요. 진행 지우기와 앱 밖 링크는 어른 확인 뒤에만 열려요.</p>
       <ul class="checks">
         <li>광고가 없어요</li>
         <li>개인정보를 모으지 않아요 <a href="privacy.html">개인정보 처리방침</a></li>
         <li>인터넷 없이도 할 수 있어요</li>
         <li>성경 인용은 개역한글, 대사는 어린이 말로 쉽게 풀었어요</li>
+        <li>한국어와 영어로 시작해, 앞으로 더 많은 언어로 함께하는 것이 목표예요</li>
       </ul>
     </div>
   </div>
@@ -224,7 +229,7 @@
   <div class="wrap">
     <a class="brand" href="index.html"><img src="assets/icon.png" alt="">하하하 바이블 탐험</a>
     <nav><a href="index.html">소개</a><a href="support.html">지원</a><a href="privacy.html">개인정보 처리방침</a><a href="terms.html">이용약관</a><a href="https://www.youtube.com/@hahahabible" target="_blank" rel="noopener">유튜브</a></nav>
-    <p>© 2026 CODESTOVE · <a href="mailto:info@codestove.io">info@codestove.io</a></p>
+    <p><a href="en/index.html" hreflang="en" lang="en" data-lang="en">English</a> · © 2026 CODESTOVE · <a href="mailto:info@codestove.io">info@codestove.io</a></p>
   </div>
 </footer>
 
@@ -232,6 +237,6 @@
 const PARTS = ['1부 · 태초', '2부 · 아브라함', '3부 · 이삭과 야곱', '4부 · 요셉'];
 const STORIES = [{"id": "creation", "no": 1, "p": 1, "t": "천지창조", "r": "창세기 1:1–2:3", "s": "아무것도 없던 곳에 하나님이 빛과 하늘과 땅을 만드셨어요. 일곱 날 동안 하나님이 하신 일을 보아요.", "g": [{"t": "새는 하늘로, 물고기는 바다로", "e": "🐟"}]}, {"id": "eden", "no": 2, "p": 1, "t": "에덴동산", "r": "창세기 2장", "s": "아담과 함께 아름다운 동산을 가꾸고, 동물들에게 이름을 지어 줘요.", "g": [{"t": "동산 가꾸기", "e": "💧"}]}, {"id": "promise", "no": 3, "p": 1, "t": "선악과와 첫 약속", "r": "창세기 3장", "s": "뱀의 거짓말과 하와의 선택. 하나님은 말씀을 어긴 사람들에게도 구원의 약속을 주셨어요.", "g": [{"t": "가시덤불 걷어 내기", "e": "🌿"}]}, {"id": "cain", "no": 4, "p": 1, "t": "가인과 아벨", "r": "창세기 4장", "s": "양을 치는 아벨과 농사짓는 가인. 두 형제가 하나님께 드린 예물과, 화난 마음을 다스리는 이야기.", "g": [{"t": "가인의 밭에서 열매 받기", "e": "🍇"}]}, {"id": "noah", "no": 5, "p": 1, "t": "노아의 방주", "r": "창세기 6–9장", "s": "노아 할아버지와 방주를 짓고 동물들을 태워요. 그리고 무지개 약속!", "g": [{"t": "방주 짓기", "e": "🔨"}]}, {"id": "babel", "no": 6, "p": 1, "t": "바벨탑", "r": "창세기 11:1–9", "s": "하늘까지 닿는 탑을 쌓아 이름을 높이려던 사람들. 하나님은 사람들의 말을 뒤섞으셨어요.", "g": [{"t": "벽돌로 탑 쌓기", "e": "🧱"}]}, {"id": "call", "no": 7, "p": 2, "t": "아브라함의 부르심", "r": "창세기 12장", "s": "\"너는 고향을 떠나 내가 보여 줄 땅으로 가라.\" 낙타 행렬과 함께 가나안까지 믿음의 여행을 떠나요.", "g": [{"t": "가나안으로 가는 길", "e": "🐪"}, {"t": "제단 쌓기", "e": "🪨"}]}, {"id": "yield", "no": 8, "p": 2, "t": "롯에게 양보한 아브라함", "r": "창세기 13–14장", "s": "목자들이 다투자 아브라함은 조카 롯에게 먼저 땅을 고르게 했어요. 붙잡혀 간 롯도 구해 내요.", "g": [{"t": "롯을 구하러 가는 밤길", "e": "🌙"}]}, {"id": "stars", "no": 9, "p": 2, "t": "하늘의 별을 세어 보라", "r": "창세기 15장", "s": "셀 수 없이 많은 밤하늘의 별처럼 자손을 주시겠다는 약속. 아브라함은 하나님을 믿었어요.", "g": [{"t": "별을 세어 보라", "e": "⭐"}]}, {"id": "hagar", "no": 10, "p": 2, "t": "하갈과 이스마엘", "r": "창세기 16장, 21:8–21", "s": "광야에서 물이 떨어진 하갈과 아이. 하나님은 우는 소리를 들으시고 샘을 보여 주셨어요.", "g": [{"t": "샘물로 가죽부대 채우기", "e": "💧"}]}, {"id": "laugh", "no": 11, "p": 2, "t": "세 손님과 사라의 웃음", "r": "창세기 17–18장", "s": "장막을 찾아온 세 손님을 대접해요. 내년 이맘때 아들을 주시겠다는 약속에 사라가 웃었어요.", "g": [{"t": "떡 받기", "e": "🍞"}]}, {"id": "sodom", "no": 12, "p": 2, "t": "소돔에서 탈출한 롯", "r": "창세기 18:16–19:29", "s": "소돔을 위해 기도한 아브라함. 천사의 손을 잡고 뒤돌아보지 말고 산으로 달려요!", "g": [{"t": "소알까지 달리기", "e": "🏃"}]}, {"id": "jireh", "no": 13, "p": 2, "t": "이삭과 여호와 이레", "r": "창세기 21–22장", "s": "약속대로 태어난 웃음의 아들 이삭. 모리아 산에서 하나님은 숫양을 준비해 두셨어요.", "g": [{"t": "모리아 산 오르기", "e": "⛰️"}]}, {"id": "rebekah", "no": 14, "p": 2, "t": "리브가와 우물", "r": "창세기 23–24장", "s": "이삭의 아내를 찾으러 간 늙은 종의 기도. 낙타 열 마리에게 물을 길어 준 리브가!", "g": [{"t": "낙타 열 마리에게 물 길어 주기", "e": "🐪"}]}, {"id": "stew", "no": 15, "p": 3, "t": "팥죽 한 그릇", "r": "창세기 25:19–34", "s": "쌍둥이 형제 에서와 야곱. 배고픈 에서는 팥죽 한 그릇에 장자의 명분을 팔았어요.", "g": [{"t": "지친 몸으로 장막까지", "e": "🏃"}]}, {"id": "wells", "no": 16, "p": 3, "t": "다투지 않은 이삭의 우물", "r": "창세기 26장", "s": "우물을 빼앗길 때마다 이삭은 다투지 않고 옮겨 가서 다시 팠어요. 하나님이 넓은 곳을 주셨어요.", "g": [{"t": "백 배의 곡식 거두기", "e": "🌾"}]}, {"id": "blessing", "no": 17, "p": 3, "t": "빼앗은 축복", "r": "창세기 27장", "s": "눈이 어두운 아버지를 속인 야곱. 거짓말이 가져온 슬픈 결과와 집을 떠나는 길.", "g": [{"t": "하란으로 떠나는 길", "e": "🎒"}]}, {"id": "ladder", "no": 18, "p": 3, "t": "야곱의 사다리", "r": "창세기 28장", "s": "혼자 도망가던 밤, 돌베개를 베고 잠든 야곱. 꿈속에서 하늘에 닿은 사다리를 보았어요.", "g": [{"t": "돌기둥 세우고 기름 붓기", "e": "🪨"}]}, {"id": "laban", "no": 19, "p": 3, "t": "라반의 집에서", "r": "창세기 29–31장", "s": "우물가에서 만난 라헬. 야곱은 칠 년씩 양 떼를 돌보며 일했고, 하나님은 고향으로 돌아가라 하셨어요.", "g": [{"t": "늘어나는 양 떼 받기", "e": "🐑"}]}, {"id": "jabbok", "no": 20, "p": 3, "t": "얍복 강과 형과의 화해", "r": "창세기 32–33, 35장", "s": "형을 만나기 전날 밤 얍복 강가에서 씨름한 야곱. 새 이름 이스라엘, 그리고 형과 끌어안은 날.", "g": [{"t": "날이 새도록 꽉 붙들기", "e": "🤼"}]}, {"id": "dreams", "no": 21, "p": 4, "t": "요셉의 꿈과 채색옷", "r": "창세기 37장", "s": "아버지가 지어 준 채색옷과 이상한 꿈. 형들을 찾아간 요셉은 구덩이에 던져지고 애굽으로 팔려 가요.", "g": [{"t": "꿈속 곡식 단 쌓기", "e": "🌾"}]}, {"id": "prison", "no": 22, "p": 4, "t": "보디발의 집과 감옥", "r": "창세기 39–40장", "s": "종이 되어도, 억울하게 감옥에 갇혀도 하나님이 요셉과 함께하셨어요. 두 관원의 꿈을 풀어 줘요.", "g": [{"t": "포도를 바로의 잔에", "e": "🍇"}]}, {"id": "pharaoh", "no": 23, "p": 4, "t": "바로의 꿈과 칠 년 풍년", "r": "창세기 41장", "s": "일곱 마리 소와 일곱 이삭의 꿈. 총리가 된 요셉과 함께 풍년 동안 곡식을 창고에 모아요.", "g": [{"t": "일곱째 해 곡식 받기", "e": "🌾"}]}, {"id": "grain", "no": 24, "p": 4, "t": "곡식을 사러 온 형들", "r": "창세기 42–44장", "s": "흉년에 애굽으로 곡식을 사러 온 형들. 요셉은 형들이 정말 달라졌는지 알아보아요.", "g": [{"t": "나귀에 곡식 자루 싣기", "e": "🫏"}]}, {"id": "reveal", "no": 25, "p": 4, "t": "내가 요셉이에요", "r": "창세기 45–47장", "s": "\"내가 요셉이에요!\" 울며 형들을 끌어안은 요셉. 수레를 보내 아버지 야곱을 모셔 와요.", "g": [{"t": "수레를 타고 애굽으로", "e": "🛒"}]}, {"id": "forgive", "no": 26, "p": 4, "t": "야곱의 축복과 요셉의 용서", "r": "창세기 48–50장", "s": "열두 아들을 축복한 야곱. \"형들은 해하려 했지만 하나님은 선으로 바꾸셨어요.\" 창세기의 마지막 이야기.", "g": [{"t": "형들의 가족에게 양식 나누기", "e": "🍞"}]}];
 </script>
-<script src="site.js"></script>
+<script src="site.js?v=20261103"></script>
 </body>
 </html>
